@@ -1,0 +1,5 @@
+- hosts: all
+  tasks:
+    - name: Include the community CIS role
+      ansible.builtin.include_role:
+        name: dsglaser.cis_security.cis_security
