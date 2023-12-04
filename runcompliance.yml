@@ -1,4 +1,5 @@
 - hosts: all
+  become: true
   tasks:
     - name: Include the community CIS role
       ansible.builtin.include_role:
